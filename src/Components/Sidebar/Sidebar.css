@@ -1,0 +1,98 @@
+.sidebar{
+
+    background: #fff;
+    width: 15%;
+    max-height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 22px;
+    padding-top: 95px;
+}
+.shortcut-links img {
+
+    width: 20px;
+    margin-right: 20px;
+    margin-top: -30px;
+}
+
+.shortcut-links p{
+   font-size: 14px;
+    margin-top: -15px;
+    width: 1px;
+}
+
+.side-link{
+ 
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.sidebar hr{
+    border: 0;
+    height: 2px;
+    background: #ccc;
+    width: 85%;
+
+}
+
+.subscribed-list h3{
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.subscribed-list img{
+     width: 25%;
+     border-radius: 50%;
+     margin-right: 5px;
+     margin-top: -14px;
+    
+}
+.small-sidebar{
+    width: 5%;
+   
+}
+.small-sidebar p{
+    display: none;
+}
+
+.small-sidebar .shortcut-links .side-link img{
+
+    width: 30px;
+    padding-bottom: 25px;
+    
+}
+
+.small-sidebar .shortcut-links{
+   margin-top: 30px;
+}
+
+.small-sidebar .shortcut-links hr{
+    width:30px;
+    margin-bottom: 40px;
+}
+
+.small-sidebar .subscribed-list .side-link img{
+
+    margin-bottom:8px;
+    width: 30px;
+}
+.small-sidebar h3{
+    display: none;
+}
+.side-link.active img{
+    padding-bottom: 2px;
+    border-bottom: 3px  solid red;
+   
+}
+
+@media(max-width:900px){
+
+    .sidebar{
+        display: none;
+    }
+}
+

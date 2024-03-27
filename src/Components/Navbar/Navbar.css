@@ -1,0 +1,105 @@
+.logo {
+    width: 150px;
+}
+
+nav {
+    padding: 10px;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    max-height: 60px;
+    width: 100%;
+   margin: 0;
+}
+
+
+
+.nav-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left .menu-icon {
+    width: 22px;
+}
+
+.nav-middle {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+.nav-middle .search-box {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-middle .search-box input {
+    flex: 1; 
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+.nav-middle .search-box img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.nav-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-right img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.nav-right .user-icon {
+    border-radius: 50%;
+    width: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-middle {
+        flex: 3;
+    }
+    
+    .nav-right img {
+        margin-right: 5px;
+    }
+
+   
+}
+
+
+@media (max-width:900px){
+    .menu-icon{
+        display: none;
+    }
+    .nav-right img{
+        display: none;
+    }
+    .nav-right .user-icon{
+        display: block;
+        width: 30px;
+    }
+    .logo{
+        width: 90px;
+    }
+    
+    .nav-middle .search-box input{
+        width: 100%;
+    }
+}
